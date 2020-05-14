@@ -1,0 +1,26 @@
+.vscode/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environments
+.env
+
+# Front-end stuff
+node_modules/
+_static/build/
