@@ -86,16 +86,23 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+LOCALE_PATHS = [
+    ROOT_DIR('locale'),
+]
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_DEV = os.path.join(BASE_DIR, '../_static')
-STATIC_ROOT = os.path.join(BASE_DIR, '../_static_collected')
+MEDIA_URL = '/media/'
+
+STATIC_DEV = ROOT_DIR('_static')
+STATIC_ROOT = ROOT_DIR('_static_collected')
+MEDIA_ROOT = ROOT_DIR('_media')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "../_static"),
+    ROOT_DIR('_static'),
 )
 
 STATICFILES_FINDERS = (
